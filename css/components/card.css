@@ -1,0 +1,100 @@
+.partner-cards-l {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 160px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.grid, .grid-partners-s {
+  display: none;
+}
+
+.partner-card {
+  max-width: 145px;
+  width: 100%;
+}
+
+.why-card {
+  padding-bottom: 60px;
+}
+
+.why-cards {
+  max-width: 500px;
+}
+
+.why-card-title {
+  opacity: 0.9;
+  color: #2d394c;
+  font-size: 22px;
+  padding-bottom: 25px;
+}
+
+.cloud::before {
+  content: url(../../images/icon-cloud.svg);
+  padding-right: 10px;
+}
+
+.watch::before {
+  content: url(../../images/stopwatch-icon.svg);
+  padding-right: 10px;
+}
+
+.chat::before {
+  content: url(../../images/tweet-icon.svg);
+  padding-right: 10px;
+}
+
+.text::before {
+  content: url(../../images/text-icon.svg);
+  padding-right: 10px;
+}
+
+.why-card-subtitle {
+  color: #9499a2;
+  font-size: 14px;
+  padding-left: 5px;
+  line-height: 22px;
+}
+
+@media (max-width: 1100px) {
+  .partner-cards-l {
+    display: none;
+  }
+  .grid-partners-s {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150px;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .grid > * {
+    padding: 10px;
+    width: 20%;
+  }
+
+  .grid-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .grid-item > img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 960px) {
+  .why-cards {
+    max-width: 100%;
+  }
+  .why-card:last-child {
+    padding-bottom: 0;
+  }
+}
